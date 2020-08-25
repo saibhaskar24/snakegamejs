@@ -15,7 +15,6 @@ function main(currentTime) {
     window.requestAnimationFrame(main)
     const secounsSinceLastRendered = (currentTime - lastRenderedTime) / 1000;
     if (secounsSinceLastRendered < 1 / SNAKE_SPEED) return
-    console.log("render")
     lastRenderedTime = currentTime
 
     update()
